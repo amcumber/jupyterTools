@@ -1,0 +1,10 @@
+import pandas as pd
+from ipywidgets import widgets
+
+@widgets.interact(max_colwidth=(25, 255, 1))
+def set_max_colwidth(max_colwidth=pd.options.display.max_colwidth):
+    pd.option.display.maxcolwidth = max_colwidth
+    
+# max_rows
+
+# max_columns
